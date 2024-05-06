@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и вход</title>
+    <link rel="stylesheet" href="css/registration.css"> <!-- Путь к файлу стилей -->
+</head>
+<body>
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form id="registrationForm">
+            <input type="text" id="fullName" placeholder="ФИО" required>
+            <input type="email" id="email" placeholder="Электронная почта" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <input type="password" id="confirmPassword" placeholder="Подтвердите пароль" required>
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+
+        <hr> <!-- Разделитель -->
+
+        <h2>Вход</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Электронная почта" required>
+            <input type="password" id="loginPassword" placeholder="Пароль" required>
+            <input type="submit" value="Войти">
+        </form>
+    </div>
+    <script src="js/registration.js"></script> <!-- Путь к JavaScript-файлу -->
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* Стили для страницы регистрации и авторизации */
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Голубой цвет фона */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Черный цвет текста */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; /* Увеличение размера текста */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Голубой цвет кнопки */
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Темный оттенок голубого для наведения */
+}

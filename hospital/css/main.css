@@ -1,0 +1,145 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif; /* Шрифт по умолчанию */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Голубой цвет фона */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Черный цвет текста */
+}
+
+/* Стили для контейнера фильтра */
+.filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Белый цвет фона */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Позволяет скрыть выход за границы */
+}
+
+/* Стили для выпадающего списка */
+#filterSelect {
+    padding: 10px;
+    border: none;
+    border-right: 1px solid #ccc; /* Добавляем разделитель между селектом и кнопкой */
+    border-radius: 0;
+    background-color: #f9f9f9; /* Цвет фона */
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1; /* Расширяем селект на всю доступную ширину */
+}
+
+/* Стили для кнопки "Применить фильтр" */
+.filter-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Украшение для правого края кнопки */
+    background-color: #007bff; /* Синий цвет */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+.filter-container button:hover {
+    background-color: #0056b3; /* Изменение цвета при наведении */
+}
+
+/* Стили для строки поиска пациента */
+.search {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Цвет фона */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px; /* Украшение для левого края поля ввода */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.search button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Украшение для правого края кнопки */
+    background-color: #007bff; /* Синий цвет */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+.search button:hover {
+    background-color: #0056b3; /* Изменение цвета при наведении */
+}
+
+/* Стили для списка пациентов */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: box-shadow 0.3s ease; /* Плавное изменение тени */
+}
+
+ul li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Увеличение тени при наведении */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для кнопок создания процедуры и добавления пациента */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Синий цвет */
+    background-image: linear-gradient(to bottom, #007bff, #0056b3); /* Градиентный фон */
+    color: white;
+    cursor: pointer;
+    transition: background-image 0.3s ease; /* Плавное изменение фона */
+}
+
+.buttons button:hover {
+    background-image: linear-gradient(to bottom, #0056b3, #00408c); /* Градиентный фон при наведении */
+}

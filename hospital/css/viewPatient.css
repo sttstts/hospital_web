@@ -1,0 +1,49 @@
+/* styles.css */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Голубой цвет фона */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+h2 {
+    color: #333; /* Черный цвет текста */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea,
+button {
+    width: calc(100% - 22px); /* Учитываем внутренний отступ */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical; /* Разрешить вертикальное изменение размера */
+}
+
+button {
+    background-color: #007bff; /* Синий цвет */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
+}
+
+button:hover {
+    background-color: #0056b3; /* Синий цвет при наведении */
+}

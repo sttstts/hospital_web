@@ -1,0 +1,77 @@
+/* Стили для страницы добавления нового пациента */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Голубой цвет фона */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Черный цвет текста */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+textarea,
+input[type="submit"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; /* Увеличение размера текста */
+}
+
+textarea {
+    resize: vertical; /* Позволяет изменять размер вертикально */
+}
+
+input[type="date"]::placeholder {
+    color: #999; /* Цвет placeholder */
+}
+
+/* Уточняющие placeholder'ы для полей с датами */
+#birthdate::placeholder {
+    content: "Дата рождения (ДД.ММ.ГГГГ)";
+}
+
+#medicalCardIssueDate::placeholder {
+    content: "Дата выдачи медицинской карты (ДД.ММ.ГГГГ)";
+}
+
+#lastVisitDate::placeholder {
+    content: "Дата последнего обращения (ДД.ММ.ГГГГ)";
+}
+
+#nextVisitDate::placeholder {
+    content: "Дата следующего визита (ДД.ММ.ГГГГ)";
+}
+
+#insurancePolicyExpirationDate::placeholder {
+    content: "Дата окончания действия страхового полиса (ДД.ММ.ГГГГ)";
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Голубой цвет кнопки */
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Темный оттенок голубого для наведения */
+}
