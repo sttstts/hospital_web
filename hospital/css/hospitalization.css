@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+form {
+    margin-bottom: 20px;
+    padding: 30px; 
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="datetime-local"],
+form select {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #0056b3; 
+}
+
+.hospitalization-info {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.hospitalization-info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.hospitalization-info p {
+    margin-bottom: 10px;
+}
+
+.hospitalization-info strong {
+    font-weight: bold;
+    color: #007bff; 
+}

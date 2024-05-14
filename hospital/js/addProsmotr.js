@@ -1,10 +1,8 @@
-// Функция для загрузки списка процедур из локального хранилища браузера
 function loadProceduresFromLocalStorage() {
     var storedProcedures = JSON.parse(localStorage.getItem("procedures"));
     return storedProcedures ? storedProcedures : [];
 }
 
-// Функция для отображения списка процедур на странице
 function displayProcedures() {
     var procedures = loadProceduresFromLocalStorage();
     var container = document.querySelector('.container');
@@ -24,7 +22,6 @@ function displayProcedures() {
     container.appendChild(list);
 }
 
-// Вызываем функцию отображения списка процедур при загрузке страницы
 window.onload = function() {
     displayProcedures();
 };

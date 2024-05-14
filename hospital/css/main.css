@@ -1,6 +1,5 @@
-/* Общие стили */
 body {
-    font-family: Arial, sans-serif; /* Шрифт по умолчанию */
+    font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
 }
@@ -11,61 +10,57 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f0f8ff; /* Голубой цвет фона */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+    background-color: #f0f8ff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333; /* Черный цвет текста */
+    color: #333; 
 }
 
-/* Стили для контейнера фильтра */
 .filter-container {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff; /* Белый цвет фона */
+    background-color: #fff; 
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden; /* Позволяет скрыть выход за границы */
+    overflow: hidden; 
 }
 
-/* Стили для выпадающего списка */
 #filterSelect {
     padding: 10px;
     border: none;
-    border-right: 1px solid #ccc; /* Добавляем разделитель между селектом и кнопкой */
+    border-right: 1px solid #ccc; 
     border-radius: 0;
-    background-color: #f9f9f9; /* Цвет фона */
+    background-color: #f9f9f9; 
     font-size: 16px;
     cursor: pointer;
-    flex: 1; /* Расширяем селект на всю доступную ширину */
+    flex: 1; 
 }
 
-/* Стили для кнопки "Применить фильтр" */
 .filter-container button {
     padding: 10px 20px;
     border: none;
-    border-radius: 0 5px 5px 0; /* Украшение для правого края кнопки */
-    background-color: #007bff; /* Синий цвет */
+    border-radius: 0 5px 5px 0; 
+    background-color: #007bff; 
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+    transition: background-color 0.3s ease; 
 }
 
 .filter-container button:hover {
-    background-color: #0056b3; /* Изменение цвета при наведении */
+    background-color: #0056b3; 
 }
 
-/* Стили для строки поиска пациента */
 .search {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    background-color: #f9f9f9; /* Цвет фона */
+    background-color: #f9f9f9; 
     border-radius: 5px;
     overflow: hidden;
 }
@@ -74,7 +69,7 @@ h1 {
     flex: 1;
     padding: 10px;
     border: none;
-    border-radius: 5px 0 0 5px; /* Украшение для левого края поля ввода */
+    border-radius: 5px 0 0 5px; 
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -82,18 +77,17 @@ h1 {
 .search button {
     padding: 10px 20px;
     border: none;
-    border-radius: 0 5px 5px 0; /* Украшение для правого края кнопки */
-    background-color: #007bff; /* Синий цвет */
+    border-radius: 0 5px 5px 0; 
+    background-color: #007bff; 
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+    transition: background-color 0.3s ease; 
 }
 
 .search button:hover {
-    background-color: #0056b3; /* Изменение цвета при наведении */
+    background-color: #0056b3; 
 }
 
-/* Стили для списка пациентов */
 ul {
     list-style-type: none;
     padding: 0;
@@ -105,12 +99,12 @@ ul li {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
-    transition: box-shadow 0.3s ease; /* Плавное изменение тени */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
 }
 
 ul li:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Увеличение тени при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 ul li a {
@@ -123,7 +117,6 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-/* Стили для кнопок создания процедуры и добавления пациента */
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -133,13 +126,13 @@ ul li a:hover {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff; /* Синий цвет */
-    background-image: linear-gradient(to bottom, #007bff, #0056b3); /* Градиентный фон */
+    background-color: #007bff; 
+    background-image: linear-gradient(to bottom, #007bff, #0056b3);
     color: white;
     cursor: pointer;
-    transition: background-image 0.3s ease; /* Плавное изменение фона */
+    transition: background-image 0.3s ease; 
 }
 
 .buttons button:hover {
-    background-image: linear-gradient(to bottom, #0056b3, #00408c); /* Градиентный фон при наведении */
+    background-image: linear-gradient(to bottom, #0056b3, #00408c); 
 }

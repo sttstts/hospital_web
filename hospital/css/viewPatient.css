@@ -1,17 +1,16 @@
-/* styles.css */
 .container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f0f8ff; /* Голубой цвет фона */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
-    font-family: Arial, sans-serif; /* Шрифт */
+    background-color: #f0f8ff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif; 
 }
 
 h2 {
-    color: #333; /* Черный цвет текста */
+    color: #333; 
 }
 
 label {
@@ -24,7 +23,7 @@ input[type="email"],
 select,
 textarea,
 button {
-    width: calc(100% - 22px); /* Учитываем внутренний отступ */
+    width: calc(100% - 22px); 
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -34,16 +33,16 @@ button {
 }
 
 textarea {
-    resize: vertical; /* Разрешить вертикальное изменение размера */
+    resize: vertical; 
 }
 
 button {
-    background-color: #007bff; /* Синий цвет */
+    background-color: #007bff; 
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавное изменение фона */
+    transition: background-color 0.3s ease; 
 }
 
 button:hover {
-    background-color: #0056b3; /* Синий цвет при наведении */
+    background-color: #0056b3; 
 }

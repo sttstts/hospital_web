@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Управление потоком пациентов</title>
-    <link rel="stylesheet" href="css/main.css"> <!-- Путь к файлу стилей -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="container">
         <h1>Список пациентов</h1>
 
-        <!-- Фильтр -->
         <div class="filter-container">
             <select id="filterSelect">
                 <option value="all">Показать всех</option>
@@ -20,21 +19,20 @@
             <button onclick="applyFilter()">Применить фильтр</button>
         </div>
 
-        <!-- Поисковая строка -->
         <div class="search">
             <input type="text" id="searchInput" onkeyup="searchPatients()" placeholder="Поиск по имени...">
         </div>
 
-        <!-- Список пациентов -->
         <ul id="patientsList"></ul>
 
-        <!-- Кнопки для создания процедуры и добавления нового пациента -->
         <div class="buttons">
             <button onclick="window.location.href = 'addProcedure.html';">Создать процедуру</button>
             <button onclick="window.location.href = 'addPatient.html';">Добавить пациента</button>
+            <button onclick="window.location.href = 'hospitalization.html';">Госпитализация</button>
+            <button onclick="window.location.href = 'hospital.html';">Стационар</button>
             <button onclick="window.location.href = 'addProsmotr.html';">Просмотр процедур</button>
         </div>
     </div>
-    <script src="js/main.js"></script> <!-- Путь к JavaScript-файлу -->
+    <script src="js/main.js"></script> 
 </body>
 </html>

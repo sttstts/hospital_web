@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма госпитализации</title>
+    <link rel="stylesheet" href="css/hospitalization.css">
+</head>
+<body>
+    <h1>Форма госпитализации</h1>
+    <form id="hospitalizationForm">
+        <label for="patientSelect">Выберите пациента:</label>
+        <select id="patientSelect" name="patientSelect"></select>
+
+        <label for="passportNumber">Паспортные данные:</label>
+        <input type="text" id="passportNumber" name="passportNumber" required><br><br>
+
+        <label for="workPlace">Место работы:</label>
+        <input type="text" id="workPlace" name="workPlace"><br><br>
+
+        <label for="insurancePolicyNumber">Номер страхового полиса:</label>
+        <input type="text" id="insurancePolicyNumber" name="insurancePolicyNumber" required><br><br>
+
+        <label for="insurancePolicyExpiration">Срок действия страхового полиса:</label>
+        <input type="text" id="insurancePolicyExpiration" name="insurancePolicyExpiration" required><br><br>
+
+        <label for="insuranceCompany">Страховая компания:</label>
+        <input type="text" id="insuranceCompany" name="insuranceCompany" required><br><br>
+
+        <label for="hospitalizationCode">Код на госпитализацию:</label>
+        <input type="text" id="hospitalizationCode" name="hospitalizationCode" required><br><br>
+
+        <label for="hospitalizationDate">Дата и время госпитализации:</label>
+        <input type="datetime-local" id="hospitalizationDate" name="hospitalizationDate" required><br><br>
+
+        <button type="submit">Записать на госпитализацию</button>
+        <button id="viewHospitalizationsButton">Просмотр истории госпитализаций</button>
+
+    </form>
+    <script src="js/hospitalization.js"></script>
+</body>
+</html>

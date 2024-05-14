@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/addProcedure.css"> <!-- Путь к файлу стилей -->
+    <link rel="stylesheet" href="css/addProcedure.css"> 
     <title>Добавить новую процедуру</title>
 </head>
 <body>
     <div class="container">
         <h2>Добавить новую процедуру</h2>
-        <!-- Форма для добавления новой процедуры -->
         <form action="main.html" method="GET" id="addProcedureForm">
             <select id="patientSelect" name="patientName" required>
                 <option value="" disabled selected>Выберите пациента</option>
-                <!-- Здесь будет список пациентов, загруженный из базы данных -->
             </select>
-            <!-- Остальные поля для добавления информации о процедуре -->
             <input type="date" id="procedureDate" name="procedureDate" required>
             <input type="text" id="doctorName" name="doctorName" placeholder="ФИО врача" required>
             <select id="procedureType" name="procedureType" required>
@@ -29,10 +26,9 @@
             <input type="text" id="procedureName" name="procedureName" placeholder="Название процедуры" required>
             <textarea id="procedureResults" name="procedureResults" placeholder="Результаты процедуры" required></textarea>
             <textarea id="procedureRecommendations" name="procedureRecommendations" placeholder="Рекомендации по дальнейшему лечению или контрольным исследованиям" required></textarea>
-            <!-- Кнопка для отправки формы -->
             <input type="submit" value="Добавить процедуру">
         </form>
     </div>
-    <script src="js/addProcedure.js"></script> <!-- Путь к JavaScript-файлу -->
+    <script src="js/addProcedure.js"></script>
 </body>
 </html>

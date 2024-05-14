@@ -1,25 +1,18 @@
-// Функция для сохранения данных пациента в localStorage
 function savePatientData(patientData) {
-    // Получаем текущий список пациентов из localStorage или создаем новый список, если его нет
     var patients = JSON.parse(localStorage.getItem('patients')) || [];
 
-    // Добавляем нового пациента в список
     patients.push(patientData);
 
-    // Сохраняем обновленный список пациентов в localStorage
     localStorage.setItem('patients', JSON.stringify(patients));
 }
 
-// Функция для генерации уникального идентификатора
 function generatePatientId() {
     return '_' + Math.random().toString(36).substr(2, 9);
 }
 
-// Функция для обработки отправки формы добавления пациента
 function handleAddPatient(event) {
-    event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+    event.preventDefault(); 
 
-    // Получаем значения полей формы
     var patientName = document.getElementById("firstName").value;
     var patientSurname = document.getElementById("lastName").value;
     var patientPatronymic = document.getElementById("patronymic").value;
@@ -39,9 +32,8 @@ function handleAddPatient(event) {
     var diagnosis = document.getElementById("diagnosis").value;
     var medicalHistory = document.getElementById("medicalHistory").value;
 
-    // Формируем объект с данными пациента
     var patientData = {
-        id: generatePatientId(), // Генерируем уникальный идентификатор пациента
+        id: generatePatientId(), 
         name: patientName,
         surname: patientSurname,
         patronymic: patientPatronymic,
@@ -62,16 +54,11 @@ function handleAddPatient(event) {
         medicalHistory: medicalHistory
     };
 
-    // Сохраняем данные пациента в localStorage
     savePatientData(patientData);
 
-    // Очищаем форму после добавления пациента
     document.getElementById("addPatientForm").reset();
 
-    // Перенаправляем пользователя на главную страницу
     window.location.href = "main.html";
 }
 
-
-// Слушаем событие отправки формы добавления пациента
 document.getElementById("addPatientForm").addEventListener("submit", handleAddPatient);

@@ -1,20 +1,18 @@
-/* Стили для страницы добавления новой процедуры */
-
 .container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f0f8ff; /* Голубой цвет фона */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
-    font-family: Arial, sans-serif; /* Шрифт */
+    background-color: #f0f8ff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif; 
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333; /* Черный цвет текста */
+    color: #333; 
 }
 
 form {
@@ -32,19 +30,19 @@ input[type="submit"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 16px; /* Увеличение размера текста */
+    font-size: 16px; 
 }
 
 textarea {
-    resize: vertical; /* Позволяет изменять размер вертикально */
+    resize: vertical; 
 }
 
 input[type="submit"] {
-    background-color: #007bff; /* Голубой цвет кнопки */
+    background-color: #007bff; 
     color: white;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3; /* Темный оттенок голубого для наведения */
+    background-color: #0056b3; 
 }

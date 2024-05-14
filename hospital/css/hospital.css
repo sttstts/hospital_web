@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+#floorPlan {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#floorImage {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#bedAssignmentForm {
+    margin-top: 20px;
+}
+
+#bedAssignmentForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#wardSelect,
+#bedSelect,
+#patientSelect {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+#bedAssignmentForm button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#bedAssignmentForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#assignedBeds h2 {
+    color: #007bff;
+    margin-top: 0;
+    text-align: center;
+}
+
+#bedList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#bedList li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#bedList li p {
+    color: #007bff;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#assignedBedsList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#assignedBedsList li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#assignedBedsList li p {
+    color: #007bff;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}

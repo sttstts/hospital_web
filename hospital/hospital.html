@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>План этажа больницы</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hospital.css">
+</head>
+<body>
+    <h1>План этажа больницы</h1>
+    <div id="floorPlan">
+        <img src="img/hospital.png" alt="План этажа больницы" id="floorImage">
+        
+        <form id="bedAssignmentForm">
+            <label for="wardSelect">Выберите палату:</label>
+            <select id="wardSelect" name="wardSelect">
+                <option value="101">Палата 101</option>
+                <option value="102">Палата 102</option>
+                <option value="102">Палата 103</option>
+                <option value="102">Палата 104</option>
+                <option value="102">Палата 105</option>
+                <option value="102">Палата 106</option>
+                <option value="102">Палата 107</option>
+                <option value="102">Палата 108</option>
+                <option value="102">Палата 109</option>
+                <option value="102">Палата 110</option>
+                <option value="102">Палата 111</option>
+                <option value="102">Палата 112</option>
+                <option value="102">Палата 113</option>
+                <option value="102">Палата 114</option>
+                <option value="102">Палата 115</option>
+                <option value="102">Палата 116</option>
+                <option value="102">Палата 117</option>
+                <option value="118">Палата 118</option>
+            </select>
+
+            <label for="bedSelect">Номер койки:</label>
+            <select id="bedSelect" name="bedSelect" disabled></select>
+            <select id="patientSelect" name="patientSelect">
+                <option value="">Выберите пациента</option>
+            </select>
+            
+            <button type="submit">Назначить койку</button>
+        </form>
+    </div>
+    <div id="assignedBeds">
+        <h2>Назначенные койки</h2>
+        <ul id="assignedBedsList"></ul>
+    </div>
+    <script src="js/hospital.js"></script>
+</body>
+</html>
